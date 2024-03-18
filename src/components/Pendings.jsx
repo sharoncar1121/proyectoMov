@@ -47,7 +47,6 @@ export function Pendings() {
       // Llama a la función markVoiceNoteAsCompleted para marcar la nota de voz como completada
       await markVoiceNoteAsCompleted(item[0], item);
       console.log('Nota de voz marcada como completada:', item);
-      // Aquí también puedes actualizar la lista de notas de voz para reflejar los cambios si es necesario
       const updatedVoiceNotes = voiceNotes.filter((note) => note[0] !== item[0]);
       setVoiceNotes(updatedVoiceNotes);
       Alert.alert('Pendiente Realizado', 'Podras ver los pendientes realizados en Realizadas')

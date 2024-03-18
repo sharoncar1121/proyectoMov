@@ -17,8 +17,7 @@ export const getCompletedVoiceNotes = async () => {
   try {
     const keys = await AsyncStorage.getAllKeys();
     const completedVoiceNotes = await Promise.all(keys.map(async key => {
-      // Verifica si la nota de voz está marcada como completada
-      // Aquí podrías agregar alguna lógica para filtrar solo las notas de voz marcadas como completadas
+      
       const jsonData = await AsyncStorage.getItem(key);
       const data = JSON.parse(jsonData); // Analiza la cadena JSON para obtener el objeto
       return data;

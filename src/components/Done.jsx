@@ -28,7 +28,6 @@ export function Done() {
     <View style={styles.voiceNoteContainer}>
       <Text style={styles.voiceNoteName}>{item[0]}</Text>
       <Text style={styles.voiceNoteDate}>{item[2]}</Text>
-      {/* Aquí puedes renderizar cualquier otro contenido de la nota de voz completada */}
     </View>
   );
 

@@ -11,7 +11,7 @@ export const saveVoiceNote = async (name, data) => {
   }
 };
 
-// Obtener notas de voz almacenadas de AsyncStorage
+
 export const getArchivedVoices = async () => {
   try {
     const keys = await AsyncStorage.getAllKeys();
